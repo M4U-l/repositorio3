@@ -95,7 +95,7 @@ function checkout() {
     });
     message += `\nTotal: $${calculateTotal()}\n\nGracias por su compra!`;
 
-    const whatsappNumber = "3054589136"; // Cambiar por tu número de WhatsApp
+    const whatsappNumber = "30207908572"; // Cambiar por tu número de WhatsApp
     const messageEncoded = encodeURIComponent(message);
     const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${messageEncoded}`;
     
