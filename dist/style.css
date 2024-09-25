@@ -1,0 +1,85 @@
+/* Fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Cambio a la fuente Montserrat */
+    background-color: #1B1B1B; /* Cambio de color de fondo */
+    color: #FFFFFF; /* Cambio de color de texto a blanco */
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #FFCF2C; /* Cambio de color de título a amarillo */
+}
+
+#product-list {
+    display: flex; /* Cambio a flexbox */
+    flex-wrap: wrap; /* Envolver productos en varias filas */
+    justify-content: center; /* Centrar productos horizontalmente */
+    gap: 20px; /* Espacio entre productos */
+}
+
+.product {
+    flex: 0 0 calc(25% - 20px); /* Tamaño de cada producto (25% - espacio entre productos) */
+    margin: 10px; /* Margen para espaciar los productos */
+    padding: 20px;
+    background-color: #3E3E3E;
+    border-radius: 10px; /* Aumento del radio de borde */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+    text-align: center;
+}
+
+.product span {
+    display: block;
+    font-size: 18px;
+    color: #FFCF2C;
+}
+
+.add-to-cart {
+    margin-top: 10px; /* Espacio arriba del botón */
+    padding: 10px 20px; /* Aumento del padding */
+    background-color: #4CAF50; /* Cambio de color de botón a verde */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px; /* Aumento del radio de borde */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave de color */
+}
+
+.add-to-cart:hover {
+    background-color: #45A049; /* Color de botón en hover */
+}
+
+#cart {
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%; /* Aumento del ancho del carrito */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border-radius: 15px; /* Aumento del radio de borde */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Sombra más pronunciada */
+}
+
+.cart-item {
+    margin-bottom: 10px; /* Aumento del espacio entre ítems */
+}
+
+#checkout-btn {
+    display: block;
+    margin: 30px auto; /* Aumento del espacio entre el carrito y el botón */
+    padding: 15px 30px; /* Aumento del padding del botón */
+    background-color: #FF5722; /* Cambio de color de botón a naranja */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 30px; /* Aumento del radio de borde */
+    cursor: pointer;
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Sombra más pronunciada */
+    transition: background-color 0.3s ease; /* Transición suave de color */
+}
+
+#checkout-btn:hover {
+    background-color: #FF6D4C; /* Color de botón en hover */
+}
